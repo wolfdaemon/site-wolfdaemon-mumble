@@ -1,0 +1,212 @@
+/* Imports */
+@font-face {
+	font-family: 'Bitter';
+	src: url('../fonts/Bitter/Bitter-VariableFont_wght.ttf');
+}
+
+/* Sectional elements */
+article {
+	background-color: hsl(168, 100%, 50%, 5%);
+}
+
+blockquote {
+	background-color: hsl(168, 50%, 50%, 5%);
+	padding: .5rem 2rem;
+}
+
+body {
+	  outline: 1px solid red;
+    background-color: #333333;
+    color: #00FFCC;
+    display: grid;
+	  font-family: 'Bitter', serif;
+    grid-template-areas:
+    "header header header"
+    "middle middle middle"
+    "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+header {
+	background-color: #333333;
+	color: white;
+	grid-area: header;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+}
+
+header,
+nav {
+	z-index: 10;
+}
+
+header div.menu ul {
+	margin: 0;
+	padding: 1rem;
+	text-align: right;
+}
+
+header div.menu ul li a {
+	display: block;
+}
+
+header div.menu ul li a:hover,
+footer ul li a:hover {
+	background-color: #333;
+	color: lightblue;
+}
+
+nav ul li button.menu-btn {
+	background-color: black;
+	color: white;
+}
+
+nav > ul:first-child {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 1rem;
+}
+
+main {	
+	grid-area: middle;
+	margin: 7.5rem 0;
+}
+
+section {
+	padding: 1rem;
+}
+
+section.index-hero {
+	background: url(https://static.fsf.org/fsforg/graphics/windows-infographic_share.png), #00000070;
+	filter: sepia(1) saturate(200%) hue-rotate(90deg) contrast(85%) brightness(125%);
+	box-shadow: #222 1rem 1rem 0px;
+	background-blend-mode: lighten;
+	background-color: #323920;
+	background-position: 85%;
+	background-repeat: no-repeat;
+	height: 32rem;
+	margin: 0 auto;
+	max-width: 80%;
+	padding: 1rem;
+	text-shadow: 1px 1px 10px #460010;
+}
+
+section.index-hero h1,
+section.index-hero span {
+	color: white;
+}
+
+footer {
+	background-color: #333333;
+	color: white;
+	grid-area: footer;
+	padding: 1rem;
+}
+
+footer * {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+footer div.socials {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-evenly;
+}
+
+/* Textual elements */
+a {
+	color: #00FFFF;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.83em;
+}
+
+h6 {
+	font-size: 0.67em;
+}
+
+/* Code-related */
+
+pre {
+	/* display: inline; */
+}
+
+code {
+	/* margin: 0;
+	padding: 0 !important;
+	*/
+}
+
+/* Classes */
+
+.menu {
+	display: none;
+}
+
+.menu ul li {
+	display: block;
+	text-align: right;
+	padding: 0 1rem 0 0;
+}
+
+img.favicon {
+	max-width: 1em;
+	height: auto;
+}
+
+img.favicon-invert {
+	filter: invert(100%);
+}
+
+@media screen and (min-width: 960px) {
+
+	header {
+		position: static;
+	}
+
+	header div.menu ul {
+		display: inline-flex;
+	}
+
+	main {
+		margin: 0;
+	}
+	
+	nav div.menu {
+		display: block;
+	}
+
+	nav ul li button.menu-btn {
+		display: none;
+	}
+	
+	article {
+		padding: 2rem 12rem 0rem;
+	}
+
+}
