@@ -15,19 +15,19 @@ blockquote {
 }
 
 body {
-	  outline: 1px solid red;
-    background-color: #333333;
-    color: #00FFCC;
-    display: grid;
-	  font-family: 'Bitter', serif;
-    grid-template-areas:
-    "header header header"
-    "middle middle middle"
-    "footer footer footer";
-    grid-template-rows: auto 1fr auto;
-    margin: 0;
-    min-height: 100vh;
-    padding: 0;
+	outline: 1px solid red;
+	background-color: #333333;
+	color: #00FFCC;
+	display: grid;
+	font-family: 'Bitter', serif;
+	grid-template-areas:
+	"header header header"
+	"middle middle middle"
+	"footer footer footer";
+	grid-template-rows: auto 1fr auto;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0;
 }
 
 div.popup {
