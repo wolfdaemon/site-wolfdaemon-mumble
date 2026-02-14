@@ -98,7 +98,7 @@ section {
 }
 
 section.index-hero {
-	background: url(https://static.fsf.org/fsforg/graphics/windows-infographic_share.png), #00000070;
+	background: #00000070;
 	filter: sepia(1) saturate(200%) hue-rotate(90deg) contrast(85%) brightness(125%);
 	box-shadow: #222 1rem 1rem 0px;
 	background-blend-mode: lighten;
