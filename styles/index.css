@@ -30,6 +30,21 @@ body {
     padding: 0;
 }
 
+div.popup {
+	background: #00000070;
+	display: none;
+	filter: sepia(1) saturate(200%) hue-rotate(90deg) contrast(85%) brightness(200%);
+	box-shadow: #222 1rem 1rem 0px;
+	background-blend-mode: lighten;
+	background-color: #323920;
+	background-position: 85%;
+	background-repeat: no-repeat;
+	margin: 2rem auto;
+	max-width: 80%;
+	padding: 1rem;
+	text-shadow: 1px 1px 10px #460010;
+}
+
 header {
 	background-color: #333333;
 	color: white;
